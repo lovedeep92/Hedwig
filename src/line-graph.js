@@ -30,7 +30,7 @@ export class LineGraph extends HTMLElement {
     this.innerHTML = `<style>${styleSheet}</style><svg id='${id}'></svg>`;
     var svg = document.querySelector(`#${id}`);
     var data = JSON.parse(this.dataset.graph);
-
+    console.log("data ", data);
     this.attachShadow({
       mode: 'open'
     });
